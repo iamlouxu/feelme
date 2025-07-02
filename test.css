@@ -244,6 +244,41 @@ body {
     line-height: 150%;
 }
 
+.container3 {
+    background-color: #000000;
+    height: 940px;
+    color: #FFFFFF;
+}
+
+.container3 h1 {
+    font-size: 32px;
+    text-align: center;
+    line-height: 120%;
+}
+
+.container3 p {
+    line-height: 150%;
+    text-align: center;
+}
+
+.choose {
+    padding: 50px;
+}
+
+.color-ear {
+    display: flex;
+}
+
+.red-black {
+    display: flex;
+    flex-direction: column;
+}
+
+.dark {
+    display: flex;
+    flex-direction: column;
+}
+
 @media (max-width:768px) {
     .nav-links {
         display: none;
