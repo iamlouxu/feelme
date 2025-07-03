@@ -135,7 +135,11 @@ table {
 }
 
 body {
-    font-family: 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+    font-family: "Noto Sans CJK TC", sans-serif;
+}
+
+.mobile-container1 {
+    display: none;
 }
 
 .container {
@@ -168,11 +172,283 @@ body {
     display: flex;
 }
 
-.container1 img {
-    max-width: 100%;
+.container1 {
+    position: relative;
 }
 
-@media (max-width:663px) {
+.container1 img {
+    max-width: 100%;
+    display: block;
+}
+
+.information {
+    color: #FFFFFF;
+}
+
+.information-h1 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+}
+
+.information-p {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+}
+
+.information h1 {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+.information p {
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.commodity h1 {
+    color: #FFFFFF;
+}
+
+.container2 {
+    max-width: 100%;
+    height: 750px;
+    background-color: #2B2B2B;
+    display: block;
+}
+
+.container2 h1 {
+    text-align: center;
+    padding: 60px;
+    color: #FFFFFF;
+    font-size: 32px;
+}
+
+.new {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.new img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.new li {
+    color: #FFFFFF;
+    font-size: 24px;
+    line-height: 150%;
+}
+
+.container3 {
+    background-color: #000000;
+    height: 940px;
+    color: #FFFFFF;
+}
+
+.container3 h1 {
+    font-size: 32px;
+    text-align: center;
+    line-height: 120%;
+}
+
+.container3 p {
+    line-height: 150%;
+    text-align: center;
+}
+
+.choose {
+    padding: 50px;
+}
+
+.color-ear {
+    display: flex;
+    padding: 80px 150px;
+}
+
+.color-ear img {
+    width: 100%;
+}
+
+.red-black {
+    display: flex;
+    flex-direction: column;
+}
+
+.dark {
+    display: flex;
+    flex-direction: column;
+}
+
+.gray {
+    margin-top: -400px;
+    padding: 20px 100px;
+    margin-left: 100px;
+}
+
+.gray img {
+    width: 40%;
+    height: auto;
+}
+
+.set-one img {
+    width: 300px;
+    height: 300px;
+}
+
+.container4 {
+    background-color: #404040;
+    height: 800px;
+    padding: 50px;
+    display: flex;
+}
+
+.input h1 {
+    color: #FFFFFF;
+    font-size: 32px;
+}
+
+.input p {
+    color: #FFFFFF;
+    padding: 30px 0px;
+}
+
+.custom-earphone {
+    display: flex;
+    background-color: #444;
+    padding: 40px;
+    gap: 40px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.custom-earphone__images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 400px;
+}
+
+.custom-earphone__images img {
+    width: 100%;
+    display: block;
+    border: 2px solid transparent;
+}
+
+.custom-earphone__images img:nth-child(4) {
+    border-color: #61b7ff;
+    /* 最下方藍色框線 */
+}
+
+.custom-earphone__form {
+    max-width: 400px;
+    color: white;
+}
+
+.custom-earphone__form h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.custom-earphone__form p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.custom-earphone__form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.custom-earphone__form input {
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+}
+
+.custom-earphone__form button {
+    align-self: flex-end;
+    padding: 8px 16px;
+    background: white;
+    color: black;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 60px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.footer__links {
+    display: flex;
+    gap: 16px;
+    font-size: 14px;
+    flex: 1;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.footer__links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer__center {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__logo {
+    width: 100px;
+    margin-bottom: 16px;
+}
+
+.footer__social {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.footer__social img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer__center hr {
+    width: 40px;
+    border: 1px solid white;
+}
+
+.footer__copyright {
+    flex: 1;
+    font-size: 14px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 100px;
+}
+
+@media (max-width:768px) {
     .nav-links {
         display: none;
     }
@@ -196,5 +472,36 @@ body {
     .container1 img {
         height: 610px;
         width: 100%;
+    }
+
+    .mobile-container1 {
+        display: block;
+    }
+
+    .mobile-main1 img {
+        width: 100%;
+        height: 610px;
+        object-fit: cover;
+    }
+
+    .web-main1 {
+        display: none;
+    }
+
+    .information-h1 {
+        position: absolute;
+        top: 60%;
+        left: 5%;
+    }
+
+    .information-p {
+        position: absolute;
+        top: 68%;
+        left: 5%;
+    }
+
+    .new {
+        flex-wrap: wrap;
+        padding: 0 auto;
     }
 }
